@@ -1,0 +1,16 @@
+# https://www.acmicpc.net/problem/2839
+sugar = int(input())
+# n은 배달해야할 설탕 키로수
+bag = 0
+
+while sugar >= 0:
+    if sugar % 5 == 0:  # 5의 배수이면
+        bag += (sugar // 5)  # 5로 나눈 몫을 구해야 정수가 됨
+        print(bag)
+        break
+    sugar -= 3
+    bag += 1  # 5의 배수가 될 때까지 설탕-3, 봉지+1
+else:
+    print(-1)
+
+    # https://ooyoung.tistory.com/81
