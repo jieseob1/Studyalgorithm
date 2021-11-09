@@ -1,15 +1,13 @@
 # 스파이가 가진 의상들이 담긴 2차원 배열 clothes가 주어질때,
 # 서로 다른 옷의 조합의 수를 return
 # 스파이는 하루에 최소 한개의 의상은 입는다.
+
+# https://velog.io/@ayoung0073/python-list
 from collections import Counter
 
 
 def solution(clothes):
-    for cloth in clothes:
-        key = cloth[0]
-        value = cloth[1]
 
-    print(Counter(list(clothes)))
     answer = 0  # 조합이 가능한 옷가지 수
     return answer
 
