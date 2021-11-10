@@ -12,6 +12,7 @@
 # 풀이 방식-> 딕셔너리를 이용하여 index를 사용하여 문제를 풀어간다
 # https://itholic.github.io/kata-printer/
 # https://mong9data.tistory.com/29
+# 11월 11일날 마저 공부하고 정리하고 끝내기
 
 def solution(priorities, location):
     answer = 0
