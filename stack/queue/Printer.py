@@ -11,28 +11,41 @@
 # https://programmers.co.kr/questions/20063
 # 풀이 방식-> 딕셔너리를 이용하여 index를 사용하여 문제를 풀어간다
 # https://itholic.github.io/kata-printer/
-# https://mong9data.tistory.com/29
+# https://mong9data.tistory.com/29 -> 다른 list들 2개를 더 만들어서 max,index등을 써서 구현
 # 11월 11일날 마저 공부하고 정리하고 끝내기
 
 def solution(priorities, location):
+    printer_list = [(index, priority) for index, priority in enumerate(
+        priorities)]  # ()로 index, priority 를 묶어서 만들어야 한다
+    # printer_list에 index,prioirty 같이 넣어준다
     answer = 0
+    # 다른 배열들을 만들어 준다: 대기하는 부분이랑 final_printer_list랑 pop한 부분을 넣어줄 수 있는 변수 이렇게 3개가 필요하다
+    final_printer_list = []
 
-    printer_list = [(i, p) for i, p in enumerate(priorities)]  # queue로 진행할 예정
+    # 나중에 final_printer_list로 모두 옮겨 줄꺼기 때문에 printer_list가 0이 될때까지 계속 while문으로 돌게 된다.
+    while printer_list:
+        tmp_value = printer_list.pop(0)  # 먼저 pop을 통해 제일 먼저 값을 빼준다
+        waiting_list = [priority
+                        for index, priority in printer_list]
+        # pop을 뺀 나머지 부분을 waiting_list에 넣어준다
+        if waiting_list:  # waiting_list가 빌때까지
+            max_prior = max(waiting_list)
+        # waiting_list에 들어간 거 중에 제일 max 부분을 빼서 tmp_value[1]과 비교해준다
+        if tmp_value[1] >= max_prior:  # 만약 내가 뺀 부분이 다른 우선 순위보다 높은 경우
+            # 가장 높은 우선 순위부터 넣어줄 예정- 어차피 index 값이 들어가 있으므로 그에 맞는 location 값을 찾아낼 수 있다.
+            final_printer_list.append(tmp_value)
+        else:
+            printer_list.append(tmp_value)
+        # 이렇게 하면 final_printer_list가 모두 우선순위별로 정의가 될것이고
+    for index, prior in enumerate(final_printer_list):
+        print("prior[0]:", prior)
+        if prior[0] == location:
+            answer = index + 1
 
-    print("printer_list", printer_list)
-
-    print("printer_list:", printer_list)
-
-    # printer_list.append(i)  # fifo로 넣어준다
-    # [1,1,9,1,1,1] 이런상태로 들어갈 예정
-
-    tmp_key, tmp_value = printer_list.pop(0)
-    print("printer_list:", printer_list)
-    print("tmp key and value:", tmp_key, tmp_value)
     return answer
 
 
-priorities = [1, 2, 3, 4, 5]
+priorities = [1, 1, 9, 1, 1, 1]
 location = 0
 
 print(solution(priorities, location))
