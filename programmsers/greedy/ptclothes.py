@@ -19,4 +19,5 @@ lost = [2, 4]
 reserve = [3]
 
 print(solution(n, lost, reserve))
-#
+# https://datahub.tistory.com/6
+# https://www.notion.so/580c3a42f21b49b497b7089f539a9f78
