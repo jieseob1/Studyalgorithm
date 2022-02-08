@@ -1,12 +1,16 @@
 from itertools import permutations
+from re import T
 
 
 def solution(numbers):
-    answer = ''
-    per = list(permutations(numbers, len(numbers)))
-    new_per = ["".join(map(str, i)) for i in per]  # 이거 중요
+    input_list = list(map(str, numbers))
+    print("input_list:", input_list)
+    for x in input_list:
+        print("x:", x * 3)
+    input_list.sort(key=lambda x: x * 3, reverse=True)
+    print("input_list:", input_list)
 
-    return max(new_per)
+    return 0
 
 
 numbers = [3, 30, 34, 5, 9]
