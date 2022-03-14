@@ -1,17 +1,5 @@
-from itertools import permutations
-from re import T
-
-
 def solution(numbers):
-    input_list = list(map(str, numbers))
-    print("input_list:", input_list)
-    for x in input_list:
-        print("x:", x * 3)
-    input_list.sort(key=lambda x: x * 3, reverse=True)
-    print("input_list:", input_list)
+    my_list = list(map(str, numbers))  # my_list에 str형으로 numbers를 넣어준다.
+    my_list.sort(key=lambda x: x * 3, reverse=True)
 
-    return 0
-
-
-numbers = [3, 30, 34, 5, 9]
-print(solution(numbers))
+    return str(int("".join(my_list)))
