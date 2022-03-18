@@ -2,19 +2,18 @@ import heapq
 
 
 def solution(scoville, K):
-    heapq.heapify(scoville)  # scoville 리스트를 heap으로 만들어준다.
-    answer = 0
-    while scoville[0] < K:  # 모든 스코빌 지수가 7이상이 될때까지
-        leastest = heapq.heappop(scoville)
-        print("leastest:", leastest)
-        nextLeast = heapq.heappop(scoville)
-        print("nextLeast:", nextLeast)
-        newScoville = (leastest + nextLeast*2)
-        print("newScoville:", newScoville)
-        heapq.heappush(scoville, newScoville)
-        answer += 1
-    print(answer)
+    count = 0
+    heapq.heapify(scoville)  # scoville 리스트 힙으로 변경
+    while (scoville[0] < K and len(scoville) > 1):  # 모든 음식의 스코빌 지수가 K 이상일때까지
+        first = heapq.heappop(scoville)
+        second = heapq.heappop(scoville)
+        new_scoville = first + (second * 2)
+        heapq.heappush(scoville, new_scoville)
+        count += 1
+    # scoville[0]이 K보다 크면 count return 해주고 그게 아니라면 -1을 리턴한다.
+    return count if scoville[0] >= K else -1
 
 
 scoville = [1, 2, 3, 9, 10, 12]
-solution(scoville, 7)
+K = 7
+print(solution(scoville, K))
