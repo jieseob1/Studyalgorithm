@@ -4,7 +4,7 @@ column = int(ord(s[0]))-int(ord('a')) + 1  # 아이디어 -> 문자를 숫자로
 
 steps = [(-2, -1), (-2, 1), (2, -1), (2, 1),
          (1, 2), (1, -2), (-1, 2), (-1, -2)]
-# 따로 갈수 있는 슽베
+# 따로 갈수 있는 방법을 정해놓는다.
 result = 0
 for step in steps:
     next_row = row + step[0]

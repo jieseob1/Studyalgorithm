@@ -24,17 +24,17 @@ def dijkstra(start):
     distance[start] = 0  # 시작 노드를 0으로 처리하기
     while q:  # q가 비어있지 않은 경우
         # 가장 최단 거리가 짧은 노드에 대한 정보 꺼내기
-        dist, now = heapq.heappop(q)  # 거리와 현재 노드
+        dist, currentNode = heapq.heappop(q)  # 거리와 현재 노드
         # 현재 노드가 이미 처리된 적이 있는 노드라면 무시
-        if distance[now] < dist:  # 현재 노드가 이미 처리된 적이 있는 노드라면 무시
+        if distance[currentNode] < dist:  # 현재 노드가 이미 처리된 적이 있는 노드라면 무시
             continue
         # 현재 노드와 연결된 다른 인접한 노드들을 확인
-        for i in graph[now]:
+        for i in graph[currentNode]:
             cost = dist + i[1]  # 거리에다가 비용을 더해준다.
             # 현재 노드를 거쳐서, 다른 노드로 이동하는 거리가 더 짧은 경우
             if cost < distance[i[0]]:  # cost가 b노드의 거리보다 더 작은 경우
                 distance[i[0]] = cost  # 갱신하고, heappush로 넣어준다.
-                heapq.heapppush(q, (cost, i[0]))
+                heapq.heappush(q, (cost, i[0]))
 
 
 # 다익스트라 알고리즘 수행
