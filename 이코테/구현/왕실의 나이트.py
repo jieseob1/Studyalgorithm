@@ -1,15 +1,13 @@
-s = input()
-row = int(s[1])
-column = int(ord(s[0]))-int(ord('a')) + 1  # 아이디어 -> 문자를 숫자로 바꾸려고 하면 ord를 사용하자
+# L자 형태로만
 
-steps = [(-2, -1), (-2, 1), (2, -1), (2, 1),
-         (1, 2), (1, -2), (-1, 2), (-1, -2)]
-# 따로 갈수 있는 방법을 정해놓는다.
-result = 0
-for step in steps:
-    next_row = row + step[0]
-    next_column = column + step[1]
-    if next_row >= 1 and next_row <= 8 and next_column >= 1 and next_column <= 8:
-        result += 1
+current_position = input()
+x = ord(current_position[0]) -96
+y = current_position[1]
+cnt = 0
 
-print(result)
+dx = [-1,1,2,2,1,-1,-2,-2]
+dy = [2,2,1,-1,-2,-2,-1,1]
+
+for i in range(len(dx)):
+    
+# use ascii code => ord ,chr
