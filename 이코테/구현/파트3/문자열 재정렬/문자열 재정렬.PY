@@ -1,12 +1,12 @@
-data = map(str,input()) # 문자열 들어오는 파트
-new_data = []
+s = input() # 문자열 s
+data = []
 num = 0
-s=''
-for ele in data:
-    if ele.isalpha():
-        new_data.append(ele)
+for elem in s:
+    if elem.isdecimal():
+        num += int(elem)
     else:
-        num += int(ele)
-new_data.sort()
-new_data.append(str(num))
-print(''.join(new_data))
+        data.append(elem)
+data.sort()
+data.append(str(num))
+print(data)
+print(''.join(data))
