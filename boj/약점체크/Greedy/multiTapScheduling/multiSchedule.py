@@ -2,6 +2,50 @@
 # 사용하고 있는 전기용품의 사용순서를 알아냄
 # 플러그를 빼는 횟수의 최소화
 
-n,k = map(int,input().split()) # n: 멀티탭 구멍의 개수 전기 용품의 총 사용횟수
-appliance_name =list(map(int,input().split()))
-# 모르겠음
+N, K = map(int, input().split())
+# n: 멀티탭 구멍 갯수
+# k: 총 사용 횟수
+
+
+multitap = list(map(int, input().split()))
+
+plugs = []
+count = 0
+
+for i in range(K):
+  # 있으면 건너 뛴다.
+    if multitap[i] in plugs:
+        continue
+  
+  # 플러그가 1개라도 비어 있으면 집어넣는다.
+    if len(plugs) < N:
+        plugs.append(multitap[i])
+        continue
+  
+    multitap_idxs = [] # 다음 멀티탭의 값을 저장.
+    hasplug = True
+
+    for j in range(N):
+  	# 멀티탭 안에 플러그 값이 있다면
+        if plugs[j] in multitap[i:]: #다음값에 들어있는 경우
+      # 멀티탭 인덱스 위치 값 가져오기.
+            multitap_idx = multitap[i:].index(plugs[j]) # 해당인덱스 가직 온다
+    else:
+        multitap_idx = 101
+        hasplug = False
+
+    # 인덱스에 값을 넣어준다.
+    multitap_idxs.append(multitap_idx)
+    
+    # 없다면 종료
+    if not hasplug:
+        break
+  
+  # 플러그를 뽑는다.
+    plug_out = multitap_idxs.index(max(multitap_idxs))
+    del plugs[plug_out] # 플러그에서 제거
+    plugs.append(multitap[i]) # 플러그에 멀티탭 값 삽입
+    count += 1 # 뽑았으므로 1 증가
+
+print(count)
+
