@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            // 첫  번 째 줄에 가장 작은 수 출력
+            function solution(a, b, c){
+                let answer;
+                // if (a < b && a < c) {
+                //     answer = a
+                // } else if (b < c && b < a) {
+                //     answer = b
+                // } else {
+                //     answer = c
+                // }
+                if ( a < b) answer = a;
+                else answer = b;
+                if (c < answer) answer = c;
+                return answer;
+            }
+
+            console.log(solution(11, 6, 5));
+        </script>
+    </body>
+</html>
