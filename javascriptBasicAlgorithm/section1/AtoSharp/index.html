@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        출력결과
+        <script>
+            function solution(str){
+                let answer = str; //string은 값이 복사되는 것이지, 배열처럼 주소 참조의 개념이 아니다
+                // for (let i = 0 ; i < str.length ; i++) {
+                //     if (str[i] === 'A') answer += '#';
+                //     else answer += str[i]
+                // }   //my answer
+                // for (let x of str) {
+                //     if (x === 'A') answer += '#'
+                //     else answer += x
+                // }
+                answer = answer.replace(/A/g, '#'); //str만 바뀜  answer는 참조가 아닌 값이 복사되는 것
+                
+                return answer;
+            }
+            // string은 map, filter 안되고 그냥 for(let of) 를 쓰거나 하게 됨
+            let str ='BANANA';
+            console.log(solution(str));
+        </script>
+    </body>
+</html>

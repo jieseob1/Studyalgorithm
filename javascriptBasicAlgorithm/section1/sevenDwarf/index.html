@@ -5,8 +5,20 @@
     </head>
     <body>
         <script>
+            // 9개 중에서 2개를 제거 했을 때 합이 100이 되면 된다.
             function solution(arr){
-                let answer=arr;
+                let answer =arr;
+                let heightSum = arr.reduce((acc, curr) => 
+                    acc + curr 
+                )
+                for (let i = 0;  i < arr.length -1 ; i++) {
+                    for (let j = i+1; i < arr.length  ; j++) {
+                        if((heightSum -arr[i] - arr[j]) === 100){
+                        arr.splice(j,1)
+                        arr.splice(i,1)}
+                    
+                    }    
+                }
                 return answer;
             }
             

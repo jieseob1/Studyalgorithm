@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            // 첫  번 째 줄에 가장 작은 수 출력
+            function solution(str){
+                var answer = 0;
+                for (var x of str){
+                    if (x.toUpperCase() === x) answer +=1;
+                }
+                return answer;
+            }
+            var str = 'KoreaTimeGood';
+            console.log(solution(str));
+        </script>
+    </body>
+</html>

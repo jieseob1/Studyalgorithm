@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            // function filter(predicate, thisArg) { // map 동일
+            //     let list = [];
+            //     for (let i = 0 ; i < a.length; i++) {
+            //         if(predicate(a[i],i)) list.push(a[i]);
+            //     }
+            // }
+            function reduce(predicate, val) { // map 동일
+                let result = val;
+                for (let i = 0 ; i < a.length; i++) {
+                    result = predicate(result, a[i])
+                }
+            }
+            
+            let arr=[20, 7, 23, 19, 10, 15, 25, 8, 13];
+            // let answer = a.filter(function(v,i) { //abount filter
+            //     return v % 2 == 1;
+            // },[1,2])
+            // reduce 는 배열을 생성해주는 것이 아닌, value를 생성해준다.
+            answer = a.reduce(function(acc,v){
+                return acc + v;
+            },0); // 처음 result의결과는 0이게 된다.
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>
