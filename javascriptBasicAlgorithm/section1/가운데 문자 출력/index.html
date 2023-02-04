@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        출력결과
+        <script>
+            function solution(str){
+                let answer;
+                let mid = Math.floor(str.length / 2);
+                if (str.length%2 == 1) answer = str.substring(mid, mid+1)
+                // answer = str.substr(2,4) // 2번부터 4개를 뽑아내라
+                else answer = str.substring(mid-1, mid+1)
+                return answer;
+            }
+            // string은 map, filter 안되고 그냥 for(let of) 를 쓰거나 하게 됨
+            let str ='good';
+            console.log(solution(str));
+        </script>
+    </body>
+</html>
