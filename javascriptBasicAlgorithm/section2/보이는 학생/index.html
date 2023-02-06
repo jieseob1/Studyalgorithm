@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            // 설명 들음
+            function solution(arr){
+                let MAX = arr[0];
+                let cnt = 1;
+                for (let i = 0; i < arr.length ; i++) {
+                    if (MAX < arr[i]) {
+                        MAX = arr[i];
+                        cnt += 1;
+                    }
+                }
+                return cnt;         
+            }
+
+            let arr=[130, 135, 148, 140 ,145,150, 150 ,153];
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>
