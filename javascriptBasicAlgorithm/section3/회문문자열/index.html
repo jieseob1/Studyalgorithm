@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(str){         
+                // let answer='NO';
+                // str= str.toUpperCase();
+                // for (let i = 0; i < Math.floor(str.length / 2); i++) {
+                //     if(str[i] !== str[str.length -i]) {
+                //         answer = 'NO';
+                //         break;
+                //     }
+                // }
+                // answer = "YES";
+                let answer= 'YES';
+                s = s.toLowerCase();
+                if(s.split('').reverse().join('') !== s) answer ="NO";
+                return answer;
+            }
+            let str = 'gooG'
+            console.log(solution(str));
+        </script>
+    </body>
+</html>
