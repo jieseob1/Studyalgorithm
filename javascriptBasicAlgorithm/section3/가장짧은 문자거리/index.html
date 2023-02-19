@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(str,tar){   
+                let answer= [];
+                //문자열 s,문자t간의 떨어진 최소거리
+                // let mystr = str.split(' ')[0];
+                // let myele = str.split(' ')[1];
+                // // index 비교
+                // let myEleIndex =[];
+                // for (let i = 0; i < mystr.length; i++) {
+                //     if(myele === mystr[i]) {
+                //         myEleIndex.push(i); 
+                //     }
+                // }
+                // for (let i = 0; i < mystr.length; i++) {
+                //     let myMin = 9999999999;
+                //     for (let j = 0 ; j < myEleIndex.length; j++) {
+                //         myMin = Math.min(myMin, Math.abs(i - myEleIndex[j])); // current position
+                //     }
+                //     answer+= myMin + " "
+                // }
+                // // 내가 푼 과정 => 최악의 경우 O(n^2)이 걸림
+
+                // 답안지
+                //해당 알파벳이 아닌 경우에는 p를 ++를 해라 & 헤당하는 알파벳을 만나면 p를 초기화한다
+                // p를 만들어서 왼쪽부터 오른쪽으로 순회하면서 해당 문자와의 거리 측정후, 반대로 오른쪽에서 왼쪽으로 가면서 해당 크기를 측정한다
+                let p = 1000;
+                for (let x of str) {
+                    if(x === tar) {
+                        p = 0;
+                    } else {
+                        p += 1;
+                    }
+                    answer.push(p)
+                }
+                p =1000;
+                for(let i = str.length -1;i  >= 0 ; i--) {
+                    if (str[i] === tar) {
+                        p = 0;
+                    } else {
+                        p++;
+                        answer[i] = Math.min(answer[i],p);
+                    }
+                }
+                return answer;
+            }
+            // 간단하게 생각해서 왼쪽에서부터 한번씩 쭉 돌고, 오른쪽에서부터 한번씩 쭉 돌면서 거리비교를 해준다는게 포인트
+            let str = 'teachermode';
+            console.log(solution(str, 'e'));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(str){   
+                // parseInt
+                // 숫자만 추출
+                // 숫자형 문자
+                let answer= 0;
+                for (let ele of str) {
+                    // parseInt => 정수화 => parseInt를 쓰지 않는 경우
+                    // 
+                    if (!isNaN(ele)) answer+=answer * 10 + Number(ele) ;
+                }
+                return answer;
+            }
+            let str = 'g00en2TOs8eSoft';
+            console.log(solution(str));
+        </script>
+    </body>
+</html>
