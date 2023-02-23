@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){         
+                let answer = 0;
+                let maxSum = [];
+                // for(let i =0; i < arr.length; i++) {
+                    // let ele = arr[i];
+                    // let cnt = 0;
+                    // for( let x of ele) {
+                    //     cnt += Number(x);
+                    // }
+                    // // maxSum = Math.max(maxSum, cnt);
+                    // if (maxSum < cnt) {  //현재 값이 최대인 경우
+                    //     answer = ele;
+                    // }
+                    // else if(maxSum === cnt) { // 같은 경우에는 원래 숫자가 더 큰거를 다븡로 한다.
+                        
+                    // }
+                    // maxSum = Math.max(maxSum , cnt);
+
+                // }
+                for (let x of arr) {
+                    // let sum = 0, tmp =x;
+                    // while(tmp) {
+                    //     sum+=(tmp % 10);
+                    //     tmp = Math.floor(tmp/10);
+                    // }
+                    let sum = x.toString().split('').reduct((a,b) => a+ Number(b), 0);
+                     
+                    if(sum>max) {
+                        max=sum;
+                        answer = x;
+                    }
+                    else if(sum === max) {
+                        if (x> answer) answer = x;
+                    }
+                }
+                return answer;
+            }
+            let arr = [128,460,603,40,521, 137, 123]
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>
