@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=javascript -->
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml" class="" translate=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="코딩테스트 연습 - 네트워크">
+<meta name="og:title" property="og:title" itemprop="title name" content="코딩테스트 연습 - 네트워크">
+<meta name="twitter:image" property="og:image" itemprop="image primaryImageOfPage" content="https://image.freepik.com/free-vector/landing-page-template-for-a-website_23-2147782747.jpg">
+<meta name="og:image" property="og:image" itemprop="image primaryImageOfPage" content="https://image.freepik.com/free-vector/landing-page-template-for-a-website_23-2147782747.jpg">
+<meta name="twitter:url" property="og:url" content="https://programmers.co.kr/">
+<meta name="og:url" property="og:url" content="https://programmers.co.kr/">
+
+<title>코딩테스트 연습 - 네트워크 | 프로그래머스 스쿨</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://school.programmers.co.kr/assets/icons/favicon-40b78633b6556a68c3da8e2125c31512fbd01d09906ab76c8a8ff289e494cadb.png">
+<link rel="apple-touch-icon" type="image/png" href="https://school.programmers.co.kr/assets/icons/apple-icon-6eafc2c4c58a21aef692d6e44ce99d41f999c71789f277317532d0a9c6db8976.png">
+<meta name="keywords" content="코딩 교육, 코딩, 프로그래밍, 실습, 생활코딩, 알고리즘, javascript, 영상/실습 강의, 추천 강의">
+<meta property="fb:app_id" content="339079816467879">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="프로그래머스 스쿨">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="image" content="https://image.freepik.com/free-vector/landing-page-template-for-a-website_23-2147782747.jpg">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="pDZDsSPTnAI2U9fspuiKKgZuvA2qssg5P3zZtqXjP3XvCHUgxBsLCkUS2-Wx5dhNhgE4WNGA7jZhL5WfjBi-Yg">
+<meta name="action-cable-url" content="wss://ws.programmers.co.kr:443/cable">
+<script async="" src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/clarity.js"></script><script type="text/javascript" async="" src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/js"></script><script src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/2050250308523590" async=""></script><script async="" src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/fbevents.js"></script><script type="text/javascript" async="" src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/bnbjbxy3m1"></script><script type="text/javascript" async="" src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/analytics.js"></script><script async="" src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/gtm.js"></script><script type="text/javascript" charset="utf-8">
+  window.__env__ = {
+  STAGE: 'production',
+  SENTRY_DSN: 'https://96f9fc1ff3f44acbb98a9c156338d14b@o1070092.ingest.sentry.io/6136918',
+  MINERVA_URL: 'minerva.programmers.co.kr',
+  HERA_CLIENT_HOST: 'https://d1nuzc1w51n1es.cloudfront.net',
+  PROGRAMMERS_HOST: 'programmers.co.kr',
+  BUSINESS_HOST: 'business.programmers.co.kr',
+  SCHOOL_HOST: 'school.programmers.co.kr',
+  CAREER_HOST: 'career.programmers.co.kr',
+  CAMPUS_HOST: 'campus.programmers.co.kr',
+  GAIA_HOST: 'gaia.programmers.co.kr',
+  PROGRAMMERS_WS_HOST: 'ws.programmers.co.kr',
+  COMMUNITY_HOST: 'community.programmers.co.kr'
+};
+
+</script>
+
+
+
+  <link rel="stylesheet" media="all" href="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/library-fde8239530a1278c686e9b405fb833ba36a6cdf92d0f6433a27713dd62f061be.css" debug="false">
+  <link rel="stylesheet" media="all" href="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/application-44de51bc418fbe570fd6ec0da68602113db2fb25be3653097bd7c8d3222fe586.css">
+  <link rel="stylesheet" media="all" href="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/school-f492f0391f5836f6d7a7aada83b03592609ef0c37e193f363e88b26b0be83d0b.css">
+
+<meta name="google-site-verification" content="Z9qZz155KQLu77llc1wF4LlccJE88dymkeGyw1I62JY">
+
+
+
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+     user_id: '349033',
+    });
+  </script>
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+  w[l] = w[l] || [];
+  w[l].push({
+    'gtm.start':
+      new Date().getTime(), event: 'gtm.js'
+  });
+  var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+  j.async = true;
+  j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+  f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-NT8HLJD');</script>
+<!-- End Google Tag Manager -->
+
+
+<link rel="stylesheet" type="text/css" href="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/d3540b091b01f2316822.css"><link rel="stylesheet" type="text/css" href="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/e08644d1afd58f761901.css"><script src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/b220114e150221u331" async="" type="text/javascript"></script><link rel="stylesheet" type="text/css" href="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/80e07d0b0a23d57b011a.css"><style id="mttstyle">
+    #mttContainer {
+      left: 0 !important;
+      top: 0 !important;
+      position: fixed !important;
+      z-index: 100000200 !important;
+      width: 1000px !important;
+      margin-left: -500px !important;
+      background-color: #00000000  !important;
+      pointer-events: none !important;
+    }
+    .bootstrapiso .tooltip {
+      width:auto  !important;
+      height:auto  !important;
+      background:transparent  !important;
+      border:none !important;
+      border-radius: 0px !important;
+      visibility: visible  !important;
+      pointer-events: none !important;
+    }
+    .bootstrapiso .tooltip-inner {
+      font-size: 14px  !important;
+      max-width: 200px  !important;
+      text-align: center !important;
+      backdrop-filter: blur(2px)  !important; 
+      background-color: #000000b8 !important;
+      color: #ffffffff !important;
+      border-radius: .25rem !important;
+      pointer-events: none !important;
+    }
+    .bootstrapiso .arrow::before {
+      border-top-color: #000000b8 !important;
+    }
+    </style></head>
+<body class="learn-lessons learn-lessons-show vsc-initialized" data-ns="Learn" data-controller="lessons" data-action="show" data-defaultlocale="ko" data-locale="ko" style="">
+
+
+
+  <div class="navbar navbar-dark navbar-expand-lg navbar-application navbar-breadcrumb">
+  <a class="navbar-brand" href="https://school.programmers.co.kr/">
+    <img alt="logo" width="24" src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/bi-symbol-light-49a242793b7a8b540cfc3489b918e3bb2a6724f1641572c14c575265d7aeea38.png">
+</a>  <ol class="breadcrumb"><li><a href="https://school.programmers.co.kr/learn/challenges">코딩테스트 연습</a></li><li><a href="https://school.programmers.co.kr/learn/courses/30/parts/12421">깊이/너비 우선 탐색(DFS/BFS)</a></li><li class="active">네트워크</li></ol>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item"><a onclick="Learn.lessons.challengeable.startTour(true)" class="nav-link" id="help" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=javascript#">도움말</a></li>
+        <li class="nav-item"><a class="nav-link" data-remote="true" href="https://school.programmers.co.kr/compile_options">컴파일 옵션</a></li>
+      </ul>
+    </div>
+</div>
+
+
+
+<div class="main theme-dark">
+  
+<script src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/5acdcbd59449ca91fb3d.js" defer="defer"></script>
+
+
+  <div class="lesson-content" data-course-slug="코딩테스트-연습" data-course-id="30" data-lesson-id="43162" data-lesson-type="Challenge" data-next-lesson-id="">
+
+    
+
+<ul class="challenge-nav nav nav-tabs nav-tabs-dark task-tab" id="tab" role="tablist">
+  <li class="nav-item algorithm-nav-link algorithm-title">
+    네트워크
+  </li>
+
+  
+<div class="challenge-settings nav-item">
+    <div class="btn-group-theme btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-sm btn-outline-dark active">
+          <input type="radio" name="themes" autocomplete="off" checked="" data-toggle="button" data-theme="dark">dark
+        </label>
+        <label class="btn btn-sm btn-outline-dark">
+          <input type="radio" name="themes" autocomplete="off" data-toggle="button" data-theme="light">light
+        </label>
+    </div>
+
+      <div data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="코드 에디터의 단축키를 설정하는 옵션입니다. 선호하는 에디터 옵션이 없다면 sublime을 선택해주세요." data-original-title="" title="">
+        <div class="btn-group-keymap btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-sm btn-outline-dark active">
+              <input type="radio" name="keymaps" autocomplete="off" checked="" data-keymap="sublime">sublime
+            </label>
+            <label class="btn btn-sm btn-outline-dark">
+              <input type="radio" name="keymaps" autocomplete="off" data-keymap="vim">vim
+            </label>
+            <label class="btn btn-sm btn-outline-dark">
+              <input type="radio" name="keymaps" autocomplete="off" data-keymap="emacs">emacs
+            </label>
+        </div>
+      </div>
+
+    <div class="dropdown-language" id="tour7">
+      <button class="btn btn-sm btn-dark dropdown-toggle" type="button" data-toggle="dropdown">
+        JavaScript
+      </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=cpp">C++</a>
+            <a class="dropdown-item" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=csharp">C#</a>
+            <a class="dropdown-item" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=go">Go</a>
+            <a class="dropdown-item" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=java">Java</a>
+            <a class="dropdown-item" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=javascript">JavaScript</a>
+            <a class="dropdown-item" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=kotlin">Kotlin</a>
+            <a class="dropdown-item" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=python">Python2</a>
+            <a class="dropdown-item" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=python3">Python3</a>
+            <a class="dropdown-item" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=ruby">Ruby</a>
+            <a class="dropdown-item" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=scala">Scala</a>
+            <a class="dropdown-item" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=swift">Swift</a>
+        </div>
+    </div>
+
+
+  <div class="connection-box connection-status js-connection-status-alert connected">
+    <svg class="ic-18"><use xlink:href="/assets/svg-defs-31728b3a785db6b747bc0f894f6478b75b89843fa0c6c0c2952ec8c805b60902.svg#ic-power-off"></use></svg>
+    <span class="connection-status-txt">네트워크 연결 끊김</span>
+  </div>
+</div>
+
+</ul>
+
+<div class="challenge-content lesson-algorithm-main-section " data-challengeable-id="2562" data-challengeable-type="algorithm" data-algorithm-type="standard" data-language="javascript" data-user-id="349033" data-interface-type="function">
+    
+
+<div class="main-section ">
+  <div class="guide-section " id="tour2" style="width: calc(40% - 12px);">
+    <div class="guide-section-description">
+      <h6 class="guide-section-title">문제 설명</h6>
+      <div class="markdown solarized-dark"><p>네트워크란 컴퓨터 상호 간에 정보를 교환할 수 있도록 연결된 형태를 의미합니다. 예를 들어, 컴퓨터 A와 컴퓨터 B가 직접적으로 연결되어있고, 컴퓨터 B와 컴퓨터 C가 직접적으로 연결되어 있을 때 컴퓨터 A와 컴퓨터 C도 간접적으로 연결되어 정보를 교환할 수 있습니다. 따라서 컴퓨터 A, B, C는 모두 같은 네트워크 상에 있다고 할 수 있습니다.</p>
+
+<p>컴퓨터의 개수 n, 연결에 대한 정보가 담긴 2차원 배열 computers가 매개변수로 주어질 때, 네트워크의 개수를 return 하도록 solution 함수를 작성하시오.</p>
+
+<h5>제한사항</h5>
+
+<ul>
+<li>컴퓨터의 개수 n은 1 이상 200 이하인 자연수입니다.</li>
+<li>각 컴퓨터는 0부터 <code>n-1</code>인 정수로 표현합니다.</li>
+<li>i번 컴퓨터와 j번 컴퓨터가 연결되어 있으면 computers[i][j]를 1로 표현합니다.</li>
+<li>computer[i][i]는 항상 1입니다.</li>
+</ul>
+
+<h5>입출력 예</h5>
+<table class="table">
+        <thead><tr>
+<th>n</th>
+<th>computers</th>
+<th>return</th>
+</tr>
+</thead>
+        <tbody><tr>
+<td>3</td>
+<td>[[1, 1, 0], [1, 1, 0], [0, 0, 1]]</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>[[1, 1, 0], [1, 1, 1], [0, 1, 1]]</td>
+<td>1</td>
+</tr>
+</tbody>
+      </table>
+<h5>입출력 예 설명</h5>
+
+<p>예제 #1<br>
+아래와 같이 2개의 네트워크가 있습니다.<br>
+  <img src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/cc1e7816-b6d7-4649-98e0-e95ea2007fd7.png" title="" alt="image0.png"></p>
+
+<p>예제 #2<br>
+아래와 같이 1개의 네트워크가 있습니다.<br>
+  <img src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/edb61632-59f4-4799-9154-de9ca98c9e55.png" title="" alt="image1.png"></p>
+</div>
+    </div>
+  </div>
+
+
+  <div class="gutter gutter-horizontal" style="width: 24px; background-image: url(&quot;/assets/img-grippie-vertical-86e641691e88be56a100b80e3d437ae6effea08c189fdbdb2396825486763a15.png&quot;);"></div><div class="run-section" style="width: calc(60% - 12px);">
+    <div id="tour3" class="code-section" onkeyup="Hera.tryoutChallenges.resizeEditor(this);" style="height: calc(60% - 7px);">
+      <div class="editor">
+        <ul class="nav nav-pills editor-nav-pills tap-form">
+    <input type="hidden" name="initial_code_12216" id="initial_code_12216" value="function solution(n, computers) {
+    var answer = 0;
+    return answer;
+}" autocomplete="off">
+    <input id="12216" data-type="code" data-language="javascript" type="hidden" value="function solution(n, computers) {
+    var answer = 0;
+    return answer;
+}">
+    <li class="nav-item">
+      <a href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=javascript#" class="btn-tab nav-link active" data-id="12216" data-language="javascript">
+        solution.js </a>
+    </li>
+</ul>
+        
+          <textarea hidden="" id="code" name="code" style="display: none;">function solution(n, computers) {
+    var answer = 0;
+    return answer;
+}</textarea><div class="CodeMirror cm-s-tomorrow-night-bright CodeMirror-wrap CodeMirror-focused" translate="no"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 87.1984px; left: 289.188px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="bottom: 0px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 48px; margin-bottom: -8px; border-right-width: 42px; min-height: 187px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 241.188px; top: 67.1984px; height: 22.3984px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">function</span> <span class="cm-def">solution</span>(<span class="cm-def">n</span>, <span class="cm-def">computers</span>) {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">let</span> <span class="cm-def">answer</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">const</span> <span class="cm-def">visited</span> <span class="cm-operator">=</span> <span class="cm-variable">Array</span>.<span class="cm-property">from</span>({<span class="cm-property">length</span>: <span class="cm-variable-2">n</span>} () <span class="cm-operator">=&gt;</span> <span class="cm-variable">False</span>)</span></pre></div><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -48px; width: 48px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" aria-hidden="true" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class=" CodeMirror-matchingbracket">{</span><span class="cm-property">visited</span><span class=" CodeMirror-matchingbracket">}</span>)</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">function</span> <span class="cm-def">dfs</span>(<span class="cm-def">start</span>) {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  }</span></pre></div><div style="position: relative;" class=""><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">return</span> <span class="cm-variable-2">answer</span>;</span></pre></div><div style="position: relative;" class=""><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 42px; width: 1px; border-bottom: 0px solid transparent; top: 187px;"></div><div class="CodeMirror-gutters" style="height: 229px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 48px;"></div></div></div></div>
+      </div>
+    </div>
+
+    <div class="gutter gutter-vertical" style="height: 14px; background-image: url(&quot;/assets/img-grippie-horizon-9ee873f74b6c8cb40d35bccfb7b34fd12c6c78dccf964c22674c3ae8ed3995be.png&quot;);"></div><div class="output-section" id="tour6" style="height: calc(40% - 7px);">
+      <div class="tab-header">
+        <div id="output-title" class="output-title" data-toggle="tab">
+          <span class="connection-status connected" data-container="body" data-toggle="popover" data-placement="top" title="" data-html="true" data-content="
+                  &lt;h6&gt;네트워크가 불안정하여 서버와의 연결이 끊어졌습니다.
+                  페이지 새로고침을 하거나 네트워크가 안정적이 되면 자동으로 재 연결됩니다.&lt;/h6&gt;
+                  &lt;h6 style=&#39;margin-top: 4px;&#39;&gt;네트워크가 정상임에도 계속해서 연결이 끊어진 상태가 지속된다면 네트워크 방화벽 문제일 수 있습니다.
+                  모바일 테더링 등 다른 네트워크를 통해 테스트에 접속해 보세요.&lt;/h6&gt;" data-original-title="서버와의 연결 끊김">
+            <svg class="ic-24"><use xlink:href="/assets/svg-defs-31728b3a785db6b747bc0f894f6478b75b89843fa0c6c0c2952ec8c805b60902.svg#ic-power-off"></use></svg>
+          </span>
+
+          실행 결과
+            <a id="stop-button" class="btn btn-sm btn-danger" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=javascript#">실행 중지</a>
+          <span id="output-spinner" class="spinner hidden">
+              <span class="bounce1"></span>
+              <span class="bounce2"></span>
+              <span class="bounce3"></span>
+            </span>
+        </div>
+      </div>
+      <div class="console tab-content">
+        <div id="output" class="console-output tab-pane fade in active show">
+          실행 결과가 여기에 표시됩니다.
+          <pre class="console-content"><div></div></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="button-section">
+  <div class="testcase-button">
+    <a id="btn-show-question" class="btn btn-dark" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162/questions">질문하기 (93)</a>
+      <a class="btn btn-dark btn-block" data-remote="true" href="https://school.programmers.co.kr/challenge_algorithms/2562/custom_testcases?lesson_id=43162">
+        테스트 케이스 추가하기
+</a>  </div>
+
+  <div class="func-buttons">
+      <a id="view-solution-group" class="btn btn-dark btn-svg" data-remote="true" href="https://school.programmers.co.kr/learn/courses/30/lessons/43162/solution_groups?language=javascript">
+        <svg class="ic-24 ic-white"><use xlink:href="/assets/svg-defs-31728b3a785db6b747bc0f894f6478b75b89843fa0c6c0c2952ec8c805b60902.svg#ic-lock-full"></use></svg> <span>다른 사람의 풀이</span>
+</a>
+      <a id="reset-code" class="btn btn-dark" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="에디터의 코드가 초기화됩니다. 초기화 버튼을 누르기 이전 코드 복원하려면 코드 에디터에 커서를 두고 Ctrl-Z를 눌러 보세요." href="https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=javascript#" data-original-title="" title="">초기화</a>
+      <div id="tour4">
+        <button name="button" type="submit" id="run-code" class="btn btn-dark" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="작성한 코드를 제출하기 전에 먼저 실행해볼 수 있습니다. 예시 테스트 케이스를 사용하며, [테스트 케이스 추가하기]를 눌러 원하는 테스트 케이스를 추가할 수 있습니다." data-original-title="" title="">코드 실행</button>
+      </div>
+
+      <div id="tour5">
+        <button name="button" type="submit" id="submit-code" class="btn btn-primary" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="시험 종료 전까지 언제든 다시 제출할 수 있으며, 제출한 코드 중 가장 높은 점수를 낸 코드가 최종 답안이 됩니다." data-original-title="" title="">제출 후 채점하기</button>
+      </div>
+  </div>
+</div>
+
+</div>
+  </div>
+
+</div>
+
+
+
+<div class="modal fade" id="modal-dialog" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
+  <script src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/library-9e818309f2d215b36de7e812527cd14dbb3948292793d8c2810eb549e6029091.js" debug="false"></script><div class="tui-tooltip" style="display: none;"><div class="arrow"></div><span class="text"></span></div><div class="tui-tooltip" style="display: none;"><div class="arrow"></div><span class="text"></span></div>
+  <script>
+//<![CDATA[
+    I18n.defaultLocale = "ko";
+    I18n.locale = "ko";
+    I18n.fallbacks = true;
+
+//]]>
+</script>  <script src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/application-9d4555aa30312378d5e43a368ac79a849f580b44e906752654e66d34c3c11442.js"></script>
+
+<script>
+//<![CDATA[
+window.addEventListener('load', function() {});
+//]]>
+</script>
+  <script src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/all.js" type="text/javascript">
+    cloudinary.setCloudName('eightcruz');
+  </script>
+
+  <script src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/loader.js" type="text/javascript"></script>
+
+  <script src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/bundle.tracing.min.js" integrity="sha384-zdoNQTTeWdXSuoI9ulC11XNWN1g9jvqQPfIy9/LMaI43S5kyHcCVhhRLcnv347dG" crossorigin="anonymous"></script>
+  <script src="./코딩테스트 연습 - 네트워크 _ 프로그래머스 스쿨_files/replay.min.js" integrity="sha384-YvPsFse/2W4OC30OkHTAjqY3xuDuWf5QR0+4Z4xVv0KXvCmTpa/pX39F4o+uPRH0" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    Sentry.init({
+      environment: "production",
+      dsn: "https://96f9fc1ff3f44acbb98a9c156338d14b@o1070092.ingest.sentry.io/6136918",
+      replaysSessionSampleRate: 0.01,
+      replaysOnErrorSampleRate: 1.0,
+      integrations: [
+        new Sentry.Integrations.BrowserTracing(),
+        new Sentry.Integrations.Replay(),
+      ],
+      initialScope: {
+        code_version: "0e3994fd43cd7af4d69620458daaebc964becb89",
+        user: {
+          id: 349033,
+          username: "j******1",
+          email: "ji******@gmail.com"
+        },
+      },
+      // Set tracesSampleRate to 1.0 to capture 100%
+      // of transactions for performance monitoring.
+      // We recommend adjusting this value in production
+      tracesSampleRate: 0.01,
+      beforeSend: function beforeSend(event) {
+        const firstException = (event.exception && event.exception.values || [])[0];
+
+        if (firstException) {
+          const mechanism = firstException.mechanism;
+          const stacktrace = firstException.stacktrace;
+          const isOnError = () => mechanism && mechanism.type === 'onerror';
+          const hasAnonymousFilename = () => Boolean(
+            stacktrace && stacktrace.frames && stacktrace.frames.some(
+              ({ filename }) => filename && filename.includes('anonymous'),
+            ),
+          );
+
+          /* console의 예외는 sentry에 보내지 않는다. #4226 */
+          if (isOnError() && hasAnonymousFilename())
+            return null;
+        }
+
+        return event;
+      },
+    });
+  </script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT8HLJD"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script type="text/javascript" charset="utf-8">
+  window.addEventListener('afterprint', function() {
+      $.ajax({
+          type: 'POST',
+          url: '/api/action_trackings/print_screen',
+          data: {
+              current_path: window.location.href
+          }
+      })
+  })
+</script>
+
+
+
+
+<noscript>
+  이 사이트의 기능을 모두 활용하기 위해서는 자바스크립트를 활성화할 필요가 있습니다.
+  <a href="http://www.enable-javascript.com/ko/" target="_blank">
+    브라우저에서 자바스크립트를 활성화하는 방법</a>을 참고하세요.
+</noscript>
+
+
+
+
+<div id="snackbar-container"></div><script>window.Shopify && document.body.setAttribute('data-shopify', JSON.stringify(window.Shopify));</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("set","autoConfig",!1,"2050250308523590");fbq("init","2050250308523590");fbq("track","PageView");</script>
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2050250308523590&amp;ev=PageView&amp;noscript=1">
+</noscript>
+<script type="text/javascript" id="">(function(c,b,d){c.__beusablerumclient__={load:function(e){var a=b.createElement("script");a.src=e;a.async=!0;a.type="text/javascript";b.getElementsByTagName("head")[0].appendChild(a)}};c.__beusablerumclient__.load(d+"?url\x3d"+encodeURIComponent(b.URL))})(window,document,"//rum.beusable.net/load/b220114e150221u331");</script><div id="mttContainer" class="bootstrapiso notranslate" data-original-title="아르 자형" title="" style="transform: translate(998px, 628px);" dir="ltr"></div></body></html>
