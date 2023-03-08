@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            //모르겠음
+            function solution(m,product){    
+                // 상품 하나 50% 할인 가능     m: 예산
+                // 모든 경우를 다 해본다. => 할인을 어떤 상품을 받을 건지 (2,2) 를 받는 경우, (4,3)을 받는 경우 이런식으로 경우를 만들어간다.
+                let answer = 0;
+                product.sort((a,b) => {
+                    console.log({a})
+                    console.log({b})
+                })
+                for (let i =0 ;i < product.length; i++) {
+                    let discount = product[i][0] + product[i][1];
+                    
+                    // 12, 4, 7, 9, 13  => 작은 수 먼저 다 합한다
+                    // 20 => 28에 못 미치기 떄문에 더하고 50% 할인을 받을 수 있는지 확인
+
+                }
+                return answer;
+            }
+            let test = [[6,6],[2,2],[4,3],[4,5],[10,3]] //가격 배송비
+            console.log(solution(28,test));
+        </script>
+    </body>
+</html>
