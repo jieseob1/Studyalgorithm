@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(str){         
+                // 공통원소 추출, 오름차순 출력
+                let answer = 'NO';
+                let stack = [];
+                for (let x of str) {
+                    if(x === ')') {
+                        while(stack.pop !== '(') {
+                            stack.pop();
+                        }
+                    } else stack.push(x)
+                }
+                
+                
+                answer = stack.join('');
+                return answer;
+            }
+            console.log(solution('(A(BC)D)EF(G(H)(IJ)K)LM(N)'));
+        </script>
+    </body>
+</html>
