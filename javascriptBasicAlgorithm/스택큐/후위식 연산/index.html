@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+          // solve later => solve at programmers
+            function solution(str){         
+                // 공통원소 추출, 오름차순 출력
+                let answer;
+                let stack =[];
+                // 내가 푼 문제
+                // let stack = [];
+                // let leftNum, rightNum;
+                // for(let x of str) {
+                //   if(x === '+' || x==='-') {
+                //     rightNum = stack.pop()
+                //     leftNum = stack.pop()
+                //     if (x==='+') {
+                //       stack.push(Number(leftNum) + Number(rightNum))
+                //     } else {
+                //       stack.push(Number(leftNum) - Number(rightNum))
+                //     }
+                //   } else if(x === '*' || x==='/') {
+                //     rightNum = stack.pop()
+                //     leftNum = stack.pop()
+                //     if (x==='*') {
+                //       stack.push(Number(leftNum) * Number(rightNum))
+                //     } else {
+                //       stack.push(Number(leftNum) / Number(rightNum))
+                //     }
+                //   } else stack.push(x);
+                // }
+                // answer = stack.pop()
+
+                for (let x of str) {
+                  if(!isNaN(x)) stack.push(Number(x));
+                  else {
+                    let rt = stack.pop();
+                    let lt = stack.pop();
+                    if(x === '+') stack.push(lt+rt);
+                    else if (x === '-') stack.push(lt-rt);
+                    // ,,,
+                  }
+                }
+                return answer;
+            }
+            console.log(solution('352+*9-'));
+        </script>
+    </body>
+</html>
