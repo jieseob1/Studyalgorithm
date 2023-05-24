@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(n){
+                let answer = [];
+                function DFS(num) {
+                    if(num === 0) return;
+                    else {
+                        DFS(Math.floor(num / 2))   
+                        answer.push(num % 2)
+                    }
+                }
+                DFS(n);
+                return answer.join('');
+            }
+            console.log(solution(11));
+        </script>
+    </body>
+</html>

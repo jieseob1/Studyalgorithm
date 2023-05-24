@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(num){
+                let answer;
+                function DFS(v) {
+                    if(v > 7) {
+                        return;
+                    }
+                    else { // v가 7보다 작을 때 
+                        console.log("preOrder v:",v) // 부 왼 오 순
+                        DFS(2 * v); // 왼쪽자식
+                        console.log("middleOrder v:",v) // 왼 부 오(부모 기준) =>  현재 부모를 출력하는 것
+                        DFS(2 * v + 1); // 오른쪽 자식
+                        console.log("postOrder v:",v) // 왼 오 부
+                    }
+                }
+                DFS(num);
+                return answer;
+            }
+            console.log(solution(1));
+        </script>
+    </body>
+</html>

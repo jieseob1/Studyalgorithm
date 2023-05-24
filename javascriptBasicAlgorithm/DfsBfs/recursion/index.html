@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(num){
+                let answer = [];
+                function recursion(number) {
+                    if(number === 1) {
+                        answer.push(number);
+                        return;
+                    } else {
+                        console.log("before number",number);// 9 8 7 6 5 4 3 2 1
+                        recursion(number-1);
+                        console.log("after number",number);// 1 2 3 4 5 6 7 8 9
+                        //dfs 의 기본 개념 => 스택에서 작동
+                        // 콜 스택 개념 => 스택 프레임 관련 공부
+                        answer.push(number)
+                    }
+                }
+                recursion(num);
+                return answer;
+            }
+            console.log(solution(9));
+        </script>
+    </body>
+</html>
