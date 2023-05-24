@@ -7,9 +7,19 @@
         <script>
             function solution(str){         
                 // 공통원소 추출, 오름차순 출력
-                let answer = 'NO';
+                let answer = '';
                 let stack = [];
-                
+                let cnt = 0
+                for (let x of str) {
+                    if(x === '(') {
+                        cnt++;
+                        stack.push(x);
+                    } else if(x === ')') {
+                        cnt -= 1;
+                    }
+                    whi
+                    
+                }
                 return answer;
             }
             console.log(solution('(A(BC)D)EF(G(H)(IJ)K)LM(N)'));
