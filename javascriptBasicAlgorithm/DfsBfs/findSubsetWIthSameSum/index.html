@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            // 못품 => 다음에 다시 풀기
+            function solution(n, arr){
+                let answer = [];
+                let ch= Array.from({length: n+1},( => 0)); //for checking
+                //체크 배열 => 1이 참여한다 안한다를 알 수 있다.
+                function DFS(v) {
+                    if(v === n){
+                        for(let i=0; i;)
+                    } else {
+                        ch[v] = 1; // check
+                        DFS(v+1); // left side
+                        ch[v] = 0; // uncheck
+                        DFS(v+1); // right side 
+
+                    }
+                }
+                DFS(0);
+                return answer;
+            }
+            console.log(solution(6, [1,3,5,6,7,10]));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            // 못품 => 다음에 다시 풀기
+            function solution(v, arr){
+                let answer = 'NO';
+                const len = arr.length;
+                let ch= Array.from({length: len+1},() => 0)
+                let arrSum = arr.reduce((curr,acc) => {
+                    console.log({curr})
+                    console.log({acc})
+                    curr += acc
+                }); // accumulation
+                console.log({arrSum})
+                function DFS(v) {
+                    if(v === len+1) {
+                        let tmpVal = 0;
+                        for(let i=0;i < len ;i++) {
+                            if(ch[i] === 1) { // if selected
+                                tmpVal += arr[i];
+                            }
+                        }
+                        if((arrSum - tmpVal) === (arrSum / 2)) answer="YES"
+                        return;
+                    }
+                    else {
+                        ch[v] = 1;
+                        DFS(v+1);
+                        ch[v] = 0;
+                        DFS(v+1);
+                    }
+                }
+                
+                DFS(1)
+                return answer;
+            }
+            console.log(solution(6, [1,3,5,6,7,10]));
+        </script>
+    </body>
+</html>
