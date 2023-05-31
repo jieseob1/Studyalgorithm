@@ -8,9 +8,12 @@
 </head>
 <body>
   <script>
-    function solution(n) {
+    function solution(n, arr) {
+      arr.sort((a,b) => a-b);
+      console.log(arr.join('\n')) // console.log의 문제로 인해서 참고후 왼쪽과 같이 변경 https://gywlsp.github.io/boj/2751/
+    }
     
-    console.log(solution(n))
+    console.log(solution(5, [5,2,3,4,1]))
   </script>
 </body>
 </html>

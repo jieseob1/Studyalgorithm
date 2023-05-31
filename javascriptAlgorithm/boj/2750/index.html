@@ -8,9 +8,13 @@
 </head>
 <body>
   <script>
-    function solution(n) {
+    function solution(n, arr) {
+      arr.sort((a,b) => a-b);
+      console.log({arr})
+
+    }
     
-    console.log(solution(n))
+    console.log(solution(5, [5,2,3,4,1]))
   </script>
 </body>
 </html>
