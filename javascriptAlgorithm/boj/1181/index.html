@@ -8,10 +8,15 @@
 </head>
 <body>
   <script>
-    function solution(n, arr) {
-      arr.sort((a,b) => a-b);
-      console.log({arr})
-
+    function solution(n, arr) { //사전 순으로 정렬하는 부분에서 막힘
+      let set_arr = new Set(arr); // 중복 제거
+      let new_Arr = Array.from(set_arr); // convert to array
+      console.log("before new_Arr:",new_Arr);
+      new_Arr.sort((a,b) => 
+        a.length - b.length || a.localeCompare(b)
+      ).join('\n');
+      console.log("after new_Arr:",new_Arr)
+      // a가 i+1, b가 i라고 보면 된다.
     }
     
     console.log(solution(13, ["but",
