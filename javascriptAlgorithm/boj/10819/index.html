@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10819</title>
+</head>
+<body>
+  <script>
+    function solution(n,arr) {
+      let answer = 0;
+      let ch = Array.from({length: n},() => 0);
+      let curr = [];
+      function DFS(L) {
+        if (curr.length === n) {
+          let temp = 0;
+          for (let i =0; i < curr.length -1; i++) {
+            temp += (Math.abs(curr[i+1] - curr[i]))
+          }
+          answer = Math.max(answer, temp)
+        } else {
+          for (let i = 0 ; i < arr.length; i++) {
+            if(ch[i] === 0 ) {
+              ch[i] = 1
+              curr.push(arr[i])
+              DFS(i+1)
+              ch[i] = 0
+              curr.pop()
+            }
+          }
+        }
+      }
+      DFS(0);
+      return answer;
+    }
+      
+    console.log(solution(6,[20,1,15,8,4,10]))
+  </script>
+</body>
+</html>
