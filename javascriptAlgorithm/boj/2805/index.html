@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 이분 탐색 문제 => 힌트 : while은 start <= end 임 => 6/20일에 다시 풀기
+    function solution(n,m ,arr) {
+      let answer;
+      function bin(target) {
+        let first = 0;
+        let last = Math.max.apply(Math,arr);
+        while(true) {
+          let mid = Math.floor((first + last) / 2);
+          let sum = 0;
+          for (let i = 0 ; i < n; i++) {
+            (arr[i] >  mid) ? sum += (arr[i] - mid) : 0 // 무조건 10이 나옴 22
+          }
+          console.log({sum})
+          if(sum > target) { //sum이 target보다 크다면 => 작게 잘린거
+            first = mid + 1;
+
+          } else {
+            last = mid  -1;
+          }
+          }
+          if (sum === target) {
+            return mid;
+          }
+        }
+      answer = bin(m);
+    }
+    console.log(solution(4,7, [20,15,10,17]))
+  </script>
+</body>
+</html>
