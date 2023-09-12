@@ -1,9 +1,15 @@
 
-K
-section1/string_1/Main.java,4/f/4f5e23332eeb88dc4f64fa56f16e9c8bf46943d1
-K
-section1/string_2/Main.java,8/a/8a3e3eeea03af62d806140adab795ddb5348e609
-K
-section1/string_3/Main.java,5/3/53e411eef3f211fb1853c5a0fb60cb503f41a578
-L
-section1/string1_4/Main.java,3/a/3a32d4411b652ce52a752693855dcc219c9ac3c0
+]
+-basic_algorithm/section2/section2_2/Main.java,6/3/631cbb620d8f5765689668a82e48c1c71fb25c99
+S
+#basic_algorithm/string1_5/Main.java,4/1/412eab0601f7f607089c46b9dda6fe233ff804de
+R
+"basic_algorithm/string_2/Main.java,3/3/33deaf13d7de968b0c82ee357c92d2d6ef6c7ad8
+R
+"basic_algorithm/string_3/Main.java,2/6/268784685de0e6637b5e64191fad75cc16710218
+]
+-basic_algorithm/section2/section2_3/Main.java,9/4/949ad9cae6976426c26419a7730d21d54a42f6c1
+S
+#basic_algorithm/string1_4/Main.java,c/c/cc8c60c26655f9250cbbb464b3a2c62c0f0f4783
+]
+-basic_algorithm/section2/section2_4/Main.java,9/a/9ab2627504a4cdc9b95351f8f941312874fcd556
