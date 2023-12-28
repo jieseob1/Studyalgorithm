@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2479167f-4c8b-4f17-b4c5-b87e292ad809" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Problem6_UnionFind/Problem6_UnionFind.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem7_Kruskal/Problem7_Kruskal.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem8_Prim/Problem8_Prim.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backjoon/DFSAndBFS/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../backjoon/DFSAndBFS/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,14 +16,14 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -35,6 +33,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703582669189</updated>
       <workItem from="1703582676644" duration="93000" />
+      <workItem from="1703771764085" duration="30000" />
     </task>
     <servers />
   </component>

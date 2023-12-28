@@ -15,8 +15,7 @@ public class Main {
     StringTokenizer st = new StringTokenizer(br.readLine());
     n = Integer.parseInt(st.nextToken());//노드
     m = Integer.parseInt(st.nextToken()); // 간선
-    v = Integer.parseInt(st.nextToken()); // 탐색 시장 정점 번호
-
+    v = Integer.parseInt(st.nextToken()); // 탐색 시장 정점 번ㄱ
     arr = new int[n+1][n+1];
 
     for (int i = 0; i < m; i++) {
