@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2479167f-4c8b-4f17-b4c5-b87e292ad809" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../backjoon/DFSAndBFS/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../backjoon/DFSAndBFS/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="2479167f-4c8b-4f17-b4c5-b87e292ad809" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +32,7 @@
       <updated>1703582669189</updated>
       <workItem from="1703582676644" duration="93000" />
       <workItem from="1703771764085" duration="30000" />
+      <workItem from="1704424954772" duration="26000" />
     </task>
     <servers />
   </component>
