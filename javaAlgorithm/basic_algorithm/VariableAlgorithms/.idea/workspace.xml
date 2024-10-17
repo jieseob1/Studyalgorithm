@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="270808fc-7e32-479d-93b3-850dcf2468dd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Kruskal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Prim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UnionFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptAlgorithm/basicConcepts/DFS/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptAlgorithm/basicConcepts/기본/n-queen/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptAlgorithm/basicConcepts/기본/n-queen/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptAlgorithm/basicConcepts/기본/차이를최대로/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptAlgorithm/boj/10819/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptAlgorithm/boj/1181/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptAlgorithm/boj/2309/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptAlgorithm/boj/2750/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptAlgorithm/boj/2751/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptAlgorithm/boj/2805/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptAlgorithm/boj/n-queen/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/DfsBfs/findSubset/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/DfsBfs/findSubsetWIthSameSum/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/DfsBfs/recursion/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/DfsBfs/recursionOrder/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/DfsBfs/second-printBin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section1/10부제/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section1/AtoSharp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section1/DeduplicateString/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section1/estimateTriangle/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section1/findChar/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section1/findLargeAlphabet/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section1/minValue/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section1/numOfPencil/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section1/reduce,filter,map/example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section1/sevenDwarf/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section1/toUpper/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section1/가운데 문자 출력/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section1/중복단어제거/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section2/가위바위보/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section2/격자판최대합/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section2/등수구하기/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section2/보이는 학생/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section2/봉우리/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section2/큰수출력/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section3/가장짧은 문자거리/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section3/문자열압축/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section3/숫자만 추출/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section3/유효한팰린드롬/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section3/회문문자열/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section4/뒤집은 소수/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section4/멘토링/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section4/자리수의합/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section4/졸업선물/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section5/공통원소구하기/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section5/두배열 합치기/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/section5/연속부분수열1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/개념/dfs,bfs/DFS/example/dfsExample.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/개념/dfs,bfs/DFS/example/network.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/스택큐/괄호문자제거/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/스택큐/쇠막대기/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/스택큐/올바른괄호/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/스택큐/크레인인형뽑기/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../javascriptBasicAlgorithm/스택큐/후위식 연산/index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2nYJnAbqjLVjt7xYK4atJ61rOvS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="270808fc-7e32-479d-93b3-850dcf2468dd" name="Changes" comment="" />
+      <created>1729144243019</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729144243019</updated>
+    </task>
+    <servers />
+  </component>
+</project>
