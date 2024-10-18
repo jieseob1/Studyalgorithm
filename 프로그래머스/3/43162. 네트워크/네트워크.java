@@ -1,21 +1,26 @@
 class Solution {
+    static int[] visited;
     public int solution(int n, int[][] computers) {
         int answer = 0;
-        int len = computers.length;
-        boolean[] visited = new boolean[len];
-        for(int i = 0; i < len; i++) {
-            if(visited[i]) continue;
-            dfs(i, computers, visited);
-            answer++;
+        visited = new int[n];//0으로 처음 상태는 모두 false
+        
+        for(int i =0; i < n;i++) {
+            if(visited[i] == 0) { //방문 안했다면
+                answer++;
+                DFS(i,n,computers);
+                
+                
+            }
         }
         return answer;
     }
-    private void dfs(int computer, int[][] computers, boolean[] visited) {
-        visited[computer] = true;
-        for(int i = 0 ; i < computers.length ; i++) {
-            if(computers[computer][i] == 1 && !visited[i]) { //여기에 이렇게 조건을 넣어서 통과한 경우에만 다음 노드에 대해서 dfs를 돌게 된다.
-                dfs(i, computers, visited);   
+    
+    public static void DFS(int v, int n, int[][] computers) {
+        visited[v] = 1; //방문 표시 해주고
+        for(int j =0; j < n;j++) {
+            if(visited[j] == 0 && computers[v][j] ==1) {
+                DFS(j, n, computers);
             }
-        }        
+        }
     }
 }
