@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0057-insert-interval](https://github.com/jieseob1/Studyalgorithm/tree/master/0057-insert-interval) |
 | [1014-k-closest-points-to-origin](https://github.com/jieseob1/Studyalgorithm/tree/master/1014-k-closest-points-to-origin) |
 ## Math
 |  |
