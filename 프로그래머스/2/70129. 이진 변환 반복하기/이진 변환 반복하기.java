@@ -1,27 +1,23 @@
 class Solution {
     public int[] solution(String s) {
-        int cnt = 0;
-        int loop = 0;
+        int[] answer = {};
+        int deleteZero = 0;
+        int transition = 0;
         while(true) {
-            if (s.equals("1")) {
-                break;
-            }
             StringBuilder sb = new StringBuilder();
+            
             for(char ch : s.toCharArray()) {
-                if(ch == '0') {
-                    cnt++;
-                } else {
+                if(ch == '1') {
                     sb.append(ch);
+                } else {
+                    deleteZero++;
                 }
             }
-            int len = sb.toString().length();
-            String radix2Len = Integer.toString(len,2);
-            s = radix2Len;
-            loop++;
+            int size = sb.toString().length();
+            s = Integer.toString(size, 2);
+            transition++;
+            if(s.equals("1")) break;
         }
-        System.out.println("cnt => " + cnt);
-        System.out.println("loop => " + loop);
-        int[] answer = {loop, cnt};
-        return answer;
+        return new int[]{transition, deleteZero};
     }
 }
