@@ -1,26 +1,22 @@
 class Solution {
-    public static int cnt = 0;
-    public static int ans = 0;
-    public static char[] alpha = {'A','E','I','O','U'};
+    static char[] words = {'A','E','I','O','U'};
+    static int cnt,result;
     public int solution(String word) {
         int answer = 0;
-        String str ="";
-        dfs(str,word);
-        return ans;
+        dfs("",0,word);
+        answer = result-1;
+        return answer;
     }
-    private void dfs(String str, String word) {
-        if( str.length() > 5) {
-            return;
-        }
-        System.out.println(str);
-        
-        if(str.equals(word)) {
-            ans = cnt;
-        }
+    private static void dfs(String str, int length,String word) {
+        if(length > 5) return;
         cnt++;
-        
-        for( int i = 0; i < alpha.length;i++) {
-            dfs(str + alpha[i],word);
+        if(str.equals(word)) {
+            result = cnt;
+            return;
+        } else {
+            for(int i = 0; i < 5; i++) {
+                dfs(str + words[i], length+1, word);
+            }
         }
     }
 }
