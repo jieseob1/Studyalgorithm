@@ -1,43 +1,42 @@
-import java.util.Set;
-import java.util.HashSet;
+import java.util.*;
 class Solution {
+    static int cnt;
+    static int[] visited;
     public int solution(String numbers) {
-        int answer = 0;
         Set<Integer> set = new HashSet();
-        char[] chars = numbers.toCharArray(); //'1', '7'
-        int len = chars.length;
-        boolean[] isVisited = new boolean[len];
-        for(int i = 1; i <= len;i++) {
-            String str = "";
-            permutation(chars,0,str, i,set, isVisited);
+        char[] stringifyNumbers = numbers.toCharArray();
+        visited = new int[numbers.length()];
+        //먼저 number를 쪼개서 만들 수 있는 모든 수들을 만들고, set에 넣음
+        //돌면서 prime이면 cnt++
+        for(int r = 1; r <= numbers.length();r++) {
+            combination(stringifyNumbers,set,"",r);
         }
-        int cnt = 0;
-        for (Integer num : set) {
-            cnt++;
-        }
-        answer = cnt;
-        return answer;
-    }
-    private void permutation(char[] chars, int depth, String str, int r,Set<Integer> set, boolean[] isVisited) {
-        if ( depth == r) {
-            int num = Integer.parseInt(str);
-            if(isPrime(num)) {
-                set.add(num);
+        for(Integer e: set) {
+            if(isPrime(e)) {
+                cnt++;
             }
+        }
+        return cnt;
+    }
+    private static void combination(char[] stringifyNumbers, Set<Integer> set,String str, int r) {
+        if(str.length() == r) {
+            set.add(Integer.parseInt(str));
         } else {
-            for( int i = 0 ; i < chars.length;i++) {
-                if(isVisited[i]) continue;
-                isVisited[i] = true;
-                permutation(chars, depth+1, str + chars[i],r,set,isVisited);
-                isVisited[i] = false;
+            for(int i = 0 ; i < stringifyNumbers.length; i++) {
+                if(visited[i] == 0) {
+                    visited[i] = 1;
+                    combination(stringifyNumbers,set, str + stringifyNumbers[i],r);
+                    visited[i] = 0;
+                }
             }
         }
+        
     }
-    private boolean isPrime(int num) {
-        if (num < 2) return false; 
-        if(num ==2 || num == 3) return true;
-        for(int i = 2; i < num; i++) {
-            if((num % i) == 0 ) return false; 
+    private static boolean isPrime(int n) {
+        if(n <=1) return false;
+        // if(n == 2 || n == 3) return true;
+        for(int i = 2; i < n;i++) {
+            if(n % i == 0 ) return false;
         }
         return true;
     }
