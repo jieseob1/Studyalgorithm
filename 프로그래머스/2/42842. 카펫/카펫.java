@@ -1,40 +1,20 @@
 class Solution {
     public int[] solution(int brown, int yellow) {
-        //brown + yellow => 2,005,000 
-        //가로 >= 세로
         int[] answer = new int[2];
-        for( int width = 3; width <= 2000; width++) {
-            for(int height = 3; height <= 2000; height++) {
-                if(!isWidthBigger(width, height)) continue;
-                
-                if(isBorderMatch(brown, width, height) && isInnerMatch(yellow, width,height)) {
-                    answer[0] = width;
-                    answer[1] = height; //한번에 적용하는 방법 확인
-                    return answer;
+        //yellow의 경우 x-2 * y-2 임
+        ///brown의 경우 2 * x + 2* (y-2)임
+        //1500번을 돌리면=> 22500000
+        for(int i = 0; i < 2000; i++) { //x가 될 친구
+            for(int j = 0 ; j < 2000; j++) {
+                if(i >= j) {
+                    if((i-2) * (j-2) == yellow && (2 * i + 2 * (j-2)) == brown) {
+                    answer[0] = i;
+                    answer[1] = j;
+                    break;
+                }   
                 }
             }
         }
         return answer;
-    }
-    
-    private boolean isBorderMatch(int brown, int width, int height) {
-        if((2 * width + 2 * (height -2)) == brown) {
-            return true;
-        }
-        return false;
-    }
-    
-    private boolean isInnerMatch(int yellow, int width, int height) {
-        if((width -2) * (height -2) == yellow) {
-            return true;
-        }
-        return false;
-    }
-    
-    private boolean isWidthBigger(int width, int height) {
-        if( width >= height) {
-            return true;
-        }
-        return false;
     }
 }
