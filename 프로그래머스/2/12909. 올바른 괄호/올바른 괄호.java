@@ -1,25 +1,26 @@
-import java.util.Stack;
+import java.util.*;
 
 class Solution {
     boolean solution(String s) {
-        boolean flag = true;
         boolean answer = true;
+
+        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
         Stack<Character> stack = new Stack();
-        char[] chars = s.toCharArray();
-        for(char ch: chars) {
+        for(Character ch : s.toCharArray()) {
             if(ch == '(') {
                 stack.push(ch);
             } else {
-                if(stack.size() == 0) {
-                    flag = false;
-                }
-                if(stack.size() != 0) {
+                if(stack.isEmpty()) {
+                    answer = false;
+                    break;
+                } else {
                     stack.pop();
                 }
             }
         }
-        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
-        answer = (stack.size() == 0 && flag) ? true : false;
+        if(!stack.isEmpty()) {
+            answer = false;
+        }
         return answer;
     }
 }
