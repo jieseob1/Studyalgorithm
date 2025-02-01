@@ -1,10 +1,0 @@
-
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶â­•ùÿÿÿÿ8™Š÷Ûš1
->
-java:S1643"Use a StringBuilder instead.(î«¡¦ıÿÿÿÿ8ŸğùÛš1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼–¿Æıÿÿÿÿ8™Š÷Ûš1
-W
-java:S1854"5Remove this useless assignment to local variable "c".(—¯ùÿÿÿÿ8 Š÷Ûš1
-H
-java:S1481"&Remove this unused "c" local variable.(—¯ùÿÿÿÿ8¢Š÷Ûš1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(…€°×ıÿÿÿÿ8£Š÷Ûš1

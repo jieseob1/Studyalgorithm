@@ -1,9 +1,0 @@
-
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶â­•ùÿÿÿÿ8¤•ÅÖ’1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŸéŠÜüÿÿÿÿ8¤•ÅÖ’1
-Y
-java:S1854"7Remove this useless assignment to local variable "tmp".(»ñÈéÿÿÿÿÿ8©•ÅÖ’1
-]	java:S125"<This block of commented-out lines of code should be removed.(‘ÖÍ×øÿÿÿÿ8ª•ÅÖ’1
-J
-java:S1481"(Remove this unused "tmp" local variable.(»ñÈéÿÿÿÿÿ8ª•ÅÖ’1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(éóÒñùÿÿÿÿ8¬•ÅÖ’1

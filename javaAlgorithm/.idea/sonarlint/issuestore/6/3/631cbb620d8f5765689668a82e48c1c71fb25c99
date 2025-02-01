@@ -1,8 +1,0 @@
-
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶â­•ùÿÿÿÿ8’öµ­›1
->
-java:S1659
-"!Declare "max" on a separate line.(í€¢‹8£ÄÈ­›1
-Z	java:S106 "9Replace this use of System.out or System.err by a logger.(ã»Øôþÿÿÿÿ8™öµ­›1
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8™öµ­›1

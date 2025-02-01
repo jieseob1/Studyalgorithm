@@ -1,10 +1,0 @@
-
-’
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ώϊψÿÿÿÿ8€η–1
-r	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶β­•ωÿÿÿÿ8€η–1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(θηΆτόÿÿÿÿ8η–1
-J
-java:S1172"(Remove this unused method parameter "n".(ώϊψÿÿÿÿ8η–1
-=
-java:S1659" Declare "rt" on a separate line.(½χΖό8‹η–1
-Z	java:S1065"9Replace this use of System.out or System.err by a logger.(µΟ…θωÿÿÿÿ8η–1

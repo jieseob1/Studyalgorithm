@@ -1,7 +1,0 @@
-
-r	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶â­•ùÿÿÿÿ8¿ï¥º1
->
-java:S1659"!Declare "pos" on a separate line.(…îÒù8Êï¥º1
-]	java:S125"<This block of commented-out lines of code should be removed.(Õù·òúÿÿÿÿ8Êï¥º1
-]	java:S125"<This block of commented-out lines of code should be removed.(šƒáãùÿÿÿÿ8Êï¥º1
-Z	java:S106*"9Replace this use of System.out or System.err by a logger.(éóÒñùÿÿÿÿ8Íï¥º1

@@ -1,9 +1,0 @@
-
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶â­•ùÿÿÿÿ8Ö²äÖ’1
-€
-java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "answer".(şù›şÿÿÿÿ8Ö²äÖ’1
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢²ä8×²äÖ’1
-G
-java:S1172
-"*Remove this unused method parameter "str".(‹Ä¬8Ú²äÖ’1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(éóÒñùÿÿÿÿ8İ²äÖ’1
