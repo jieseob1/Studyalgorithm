@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/jieseob1/Studyalgorithm/tree/master/0001-two-sum) |
 | [0057-insert-interval](https://github.com/jieseob1/Studyalgorithm/tree/master/0057-insert-interval) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jieseob1/Studyalgorithm/tree/master/0150-evaluate-reverse-polish-notation) |
 | [1014-k-closest-points-to-origin](https://github.com/jieseob1/Studyalgorithm/tree/master/1014-k-closest-points-to-origin) |
@@ -36,4 +37,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jieseob1/Studyalgorithm/tree/master/0150-evaluate-reverse-polish-notation) |
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/jieseob1/Studyalgorithm/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
