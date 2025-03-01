@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0057-insert-interval](https://github.com/jieseob1/Studyalgorithm/tree/master/0057-insert-interval) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/jieseob1/Studyalgorithm/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jieseob1/Studyalgorithm/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0169-majority-element](https://github.com/jieseob1/Studyalgorithm/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/jieseob1/Studyalgorithm/tree/master/0217-contains-duplicate) |
 | [1014-k-closest-points-to-origin](https://github.com/jieseob1/Studyalgorithm/tree/master/1014-k-closest-points-to-origin) |
 ## Math
@@ -18,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Divide and Conquer
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/jieseob1/Studyalgorithm/tree/master/0169-majority-element) |
 | [1014-k-closest-points-to-origin](https://github.com/jieseob1/Studyalgorithm/tree/master/1014-k-closest-points-to-origin) |
 ## Geometry
 |  |
@@ -26,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/jieseob1/Studyalgorithm/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/jieseob1/Studyalgorithm/tree/master/0217-contains-duplicate) |
 | [1014-k-closest-points-to-origin](https://github.com/jieseob1/Studyalgorithm/tree/master/1014-k-closest-points-to-origin) |
 ## Heap (Priority Queue)
@@ -44,9 +47,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/jieseob1/Studyalgorithm/tree/master/0001-two-sum) |
+| [0169-majority-element](https://github.com/jieseob1/Studyalgorithm/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/jieseob1/Studyalgorithm/tree/master/0217-contains-duplicate) |
 ## Dynamic Programming
 |  |
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/jieseob1/Studyalgorithm/tree/master/0121-best-time-to-buy-and-sell-stock) |
+## Counting
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/jieseob1/Studyalgorithm/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
