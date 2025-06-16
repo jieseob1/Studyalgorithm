@@ -14,8 +14,6 @@ class Solution {
         System.out.println(right);
         char[] charList = newString.toCharArray();
         while(left <= right) {
-            System.out.println("charList[left] => " + charList[left]);
-            System.out.println("charList[right] => " + charList[right]);
             if(charList[left] != charList[right]) {
                 return false;
             } else {
