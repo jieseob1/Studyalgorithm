@@ -10,8 +10,6 @@ class Solution {
         String newString = sb.toString();
         int left = 0;
         int right = newString.length() -1;
-        System.out.println(left);
-        System.out.println(right);
         char[] charList = newString.toCharArray();
         while(left <= right) {
             if(charList[left] != charList[right]) {
