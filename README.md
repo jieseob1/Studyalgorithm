@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0242-valid-anagram](https://github.com/jieseob1/Studyalgorithm/tree/master/0242-valid-anagram) |
 | [1014-k-closest-points-to-origin](https://github.com/jieseob1/Studyalgorithm/tree/master/1014-k-closest-points-to-origin) |
 ## Heap (Priority Queue)
 |  |
@@ -65,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0125-valid-palindrome](https://github.com/jieseob1/Studyalgorithm/tree/master/0125-valid-palindrome) |
+| [0242-valid-anagram](https://github.com/jieseob1/Studyalgorithm/tree/master/0242-valid-anagram) |
 ## Linked List
 |  |
 | ------- |
@@ -73,4 +75,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/jieseob1/Studyalgorithm/tree/master/0021-merge-two-sorted-lists) |
+## Hash Table
+|  |
+| ------- |
+| [0242-valid-anagram](https://github.com/jieseob1/Studyalgorithm/tree/master/0242-valid-anagram) |
 <!---LeetCode Topics End-->
