@@ -16,24 +16,22 @@ class Solution {
         if (list2 == null) {
             return list1;
         }
+        ListNode dummy = new ListNode(-1);
+        ListNode current = dummy;
         
-        ListNode result = new ListNode();
-            ListNode temp = result;
-            
-            while(list1 != null && list2 != null) { // 계속 존재하는한 계속 한다.
-                if(list1.val > list2.val) {
-                    temp.next = list2; //왜 이렇게 넣지
-                    list2 = list2.next;
-                } else{ // list1이 list2보다 작거나 같은 경우
-                    temp.next = list1;
-                    list1 = list1.next;
-                }
-                temp = temp.next;
+        while(list1 != null && list2 != null) {
+            if(list1.val >= list2.val) {
+                current.next = list2;
+                list2 = list2.next;
+            } else {
+                current.next = list1;
+                list1 = list1.next;
             }
-        if(list1 == null) {temp.next = list2;}
-        else {temp.next = list1;}
+            current = current.next;
+        }
 
-        
-        return result.next;
+        current.next = (list1 != null) ? list1 : list2;
+
+        return dummy.next;
     }
 }
