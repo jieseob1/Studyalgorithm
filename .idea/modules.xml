@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BasicAlgorithmConcept/BasicAlgorithmConcept.iml" filepath="$PROJECT_DIR$/BasicAlgorithmConcept/BasicAlgorithmConcept.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Studyalgorithm.iml" filepath="$PROJECT_DIR$/.idea/Studyalgorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codingtest/codingtest.iml" filepath="$PROJECT_DIR$/codingtest/codingtest.iml" />
+    </modules>
+  </component>
+</project>

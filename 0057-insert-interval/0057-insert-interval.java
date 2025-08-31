@@ -1,44 +1,44 @@
-class Solution {
+import java.util.*;
 
-    public int[][] insert(int[][] intervals, int[] newInterval) {
-        //new interval의 start, end을 꺼내서
-        List<Interval> list = new ArrayList();
-        
-        int newStart = newInterval[0];
-        int newEnd = newInterval[1];
-        for( int i = 0 ; i < intervals.length;i++) {
-            int[] interval = intervals[i];
-            //2가지 조건 newinterval의 시작점이 interval 사이에 있을 때,
-            // end
-            if(interval[1] < newInterval[0]) { // 새로운 인터벌보다 interval[0]이 작은 경우
-                list.add(new Interval(interval[0],interval[1]));
-            }
-            //3
-            
-            else if(interval[0] > newInterval[1]) {
-                list.add(new Interval(interval[0],interval[1]));
-            }
-            else {
-                newStart = Math.min(newStart, interval[0]);
-                newEnd = Math.max(newEnd, interval[1]);
-            }
-        }
-        list.add(new Interval(newStart, newEnd));
-        Collections.sort(list, (a,b) -> a.start - b.start);
-        int[][] answer = new int[list.size()][2];
-        for(int i = 0 ; i < list.size();i++) {
-            answer[i][0] = list.get(i).start;
-            answer[i][1] = list.get(i).end;
-        }
-        return answer;
+class Main {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int[] A = {1,5,6,10};
+        int result = solution.solution(A);
+        System.out.println("Result: " + result);
     }
 }
-class Interval {
-    int start;
-    int end;
-    public Interval(int start, int end) {
-        this.start = start;
-        this.end = end;
+
+class Solution {
+
+    public int solution(int[] A) {
+        int count = 0 ;
+        int idx = 1;
+
+        while (true) {
+            if (idx >= A.length) {
+                break;
+            }
+
+           if (A[idx] <= A[idx - 1]) { // 이전게 더 크면, 4 2
+                //그럼 여기서 시작
+               count++;
+               if (idx + 1 < A.length) {
+                   // 다음거가 더 작으면, 4 2 1
+                   idx++;
+               }
+               System.out.println("idx: " + idx + ", A[idx]: " + A[idx]);
+               while (idx < A.length && A[idx] >= A[idx - 1]) { // 다음거보
+                   idx++;
+               }
+
+            } else {
+                idx++;
+            }
+
+        }
+        return count;
     }
+
 
 }
