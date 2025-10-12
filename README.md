@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0015-3sum](https://github.com/jieseob1/Studyalgorithm/tree/master/0015-3sum) |
 | [0057-insert-interval](https://github.com/jieseob1/Studyalgorithm/tree/master/0057-insert-interval) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jieseob1/Studyalgorithm/tree/master/0150-evaluate-reverse-polish-notation) |
 | [1014-k-closest-points-to-origin](https://github.com/jieseob1/Studyalgorithm/tree/master/1014-k-closest-points-to-origin) |
@@ -23,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/jieseob1/Studyalgorithm/tree/master/0015-3sum) |
 | [1014-k-closest-points-to-origin](https://github.com/jieseob1/Studyalgorithm/tree/master/1014-k-closest-points-to-origin) |
 ## Heap (Priority Queue)
 |  |
@@ -41,4 +43,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/jieseob1/Studyalgorithm/tree/master/0020-valid-parentheses) |
+## Two Pointers
+|  |
+| ------- |
+| [0015-3sum](https://github.com/jieseob1/Studyalgorithm/tree/master/0015-3sum) |
 <!---LeetCode Topics End-->
