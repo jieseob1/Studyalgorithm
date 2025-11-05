@@ -1,44 +1,33 @@
-import java.util.*;
-
-class Main {
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        int[] A = {1,5,6,10};
-        int result = solution.solution(A);
-        System.out.println("Result: " + result);
-    }
-}
-
 class Solution {
+    public int[][] insert(int[][] intervals, int[] newInterval) {
+        List<int[]> result = new ArrayList();
+        boolean inserted = false;
+        int newStart = newInterval[0];
+        int newEnd = newInterval[1];
 
-    public int solution(int[] A) {
-        int count = 0 ;
-        int idx = 1;
-
-        while (true) {
-            if (idx >= A.length) {
-                break;
-            }
-
-           if (A[idx] <= A[idx - 1]) { // 이전게 더 크면, 4 2
-                //그럼 여기서 시작
-               count++;
-               if (idx + 1 < A.length) {
-                   // 다음거가 더 작으면, 4 2 1
-                   idx++;
-               }
-               System.out.println("idx: " + idx + ", A[idx]: " + A[idx]);
-               while (idx < A.length && A[idx] >= A[idx - 1]) { // 다음거보
-                   idx++;
-               }
-
+        for(int[] interval: intervals) {
+            int start = interval[0];
+            int end = interval[1];
+            //3단계로 나눠야됨 
+            //1. 기존 internval이 newInterval보다 왼쪽
+            if(newStart > end) {
+                result.add(interval);
+            } else if (newEnd < start) {
+                //2. 기존 internval이 newInterval보다 오른쪽에 있을때
+                if(!inserted) { // 이 부분 이렇게 한 이유 => inserted는 왜 이렇게 하지
+                    result.add(new int[]{newStart, newEnd});
+                    inserted = true;
+                }
+                result.add(interval);
             } else {
-                idx++;
+                //2. 중간에 있어서 병합해야 되는 경우
+                newStart = Math.min(newStart, start);
+                newEnd = Math.max(newEnd, end);
             }
-
         }
-        return count;
+        if(!inserted) {
+            result.add(new int[]{newStart, newEnd});
+        }
+        return result.toArray(new int[result.size()][]); // toArray가 가능한거 같은데, 이유와 뒤에 new int부분
     }
-
-
 }
