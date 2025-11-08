@@ -1,41 +1,35 @@
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-        // 모든 triplets 이 0인거
-        // 따로 정렬 안하고, n번 돌면서 투포인터 써서 값 추가하기
-        List<List<Integer>> list = new ArrayList();
-        List<Integer> subList = new ArrayList(); //list distinct
-        // 1.오름차순 정렬
-        Arrays.sort(nums);
-        int len = nums.length;
-        //2. for문으로 처리하고, left ,right 만들어서 3중 포인트 만들기
-        for(int i = 0; i < len-2;i++) {
-            int left = i+1;
-            int right = len-1;
-            int firstPtr = nums[i];
-            if (i > 0 && firstPtr == nums[i - 1]) continue;
-                if(firstPtr > 0) {
-                    break;
-                }
-            while(left < right) {
-                
-                int secondPtr = nums[left];
-                int thirdPtr = nums[right];
-                if(firstPtr + secondPtr + thirdPtr <= 0) {
-                    if(firstPtr + secondPtr + thirdPtr == 0) {
-                        subList.add(firstPtr);
-                        subList.add(secondPtr);
-                        subList.add(thirdPtr);
+        // 배열, 투포인터, sorting
+        // 이거 풀었던 문제
+        //1. sorting
+        Arrays.sort(nums); // nums에 0만 수없이 많은 케이스 해결 
+        // make 0
+        Set<List<Integer>> list = new HashSet(new ArrayList());
+        for(int i = 0; i < nums.length -2; i++) {
+            int firstVal = nums[i];
+            int leftVal = i+1;
+            int rightVal = nums.length -1; // left,right 
+            while(leftVal < rightVal) {
+                int sum = firstVal + nums[leftVal] + nums[rightVal];
+                if(sum >= 0) {
+                    if(sum == 0) {
+                        List<Integer> subList = new ArrayList<>();
+                        subList.add(firstVal);
+                        subList.add(nums[leftVal]);
+                        subList.add(nums[rightVal]);
                         list.add(subList);
-                        subList = new ArrayList();
                     }
-                    left++;
+                    rightVal--;
                 } else {
-                    right--;
+                    //마이너스이니까 left를 올림
+                    leftVal++;
                 }
             }
             
-            
+            // 여기서 List에서의 set으로 만들어서 중복을 없애는 방법은? 
+
         }
-        return list.stream().distinct().collect(Collectors.toList());
+        return list.stream().collect(Collectors.toList());
     }
 }
